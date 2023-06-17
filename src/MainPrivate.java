@@ -19,7 +19,6 @@ class MainPrivate3 {
     }
 
 }
-
 class MainPrivate4 {
 
 }
