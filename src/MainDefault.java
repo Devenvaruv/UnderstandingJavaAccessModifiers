@@ -1,4 +1,4 @@
-class MainDefault {
+class MainDefault {// this class will have different variable and methods
      int defaultInt = 0;
      void defaultMethod(){
           System.out.println("MainDefault method defaultMethod");
@@ -39,3 +39,4 @@ class MainDefault8 {
         System.out.println("MainDefault class MainDefault8");
     }
 }
+

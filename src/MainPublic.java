@@ -1,6 +1,6 @@
-import com.sun.tools.javac.Main;
 
-public class MainPublic {
+
+public class MainPublic {// this class will have different variable and methods
 
     public int publicInt = 0;
     public static int publicStaticInt = 1;
@@ -15,7 +15,7 @@ public class MainPublic {
 }
 // Access Modifiers public is not allowed here as only one public access modifier at top level is allowed because of JLS Specification. The Compiler expects a single public class with the same name as the source file name
 // main is only accessible by a top level class. so no main inside nested class.
-class MainPublic2 {
+class MainPublic2 {// This class will have
     class MainPublic21 {
         public static void main(String[] args){
             System.out.println("MainPublic2 class MainPublic21");

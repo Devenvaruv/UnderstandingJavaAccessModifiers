@@ -1,5 +1,5 @@
 // Access Modifier private is not allowed for top level class
-class MainPrivate {
+class MainPrivate {// this class will have different variable and methods
 
     private int privateInt = 0;
 
@@ -14,9 +14,19 @@ class MainPrivate2 {
      }
  }
  private class MainPrivate22{
+     public static void main(String[] args){
+         class MainPrivate221{
+
+//             System.out.println("MainPrivate2 class MainPrivate22");
+
+         }
+     }
 
  }
  private class MainPrivate23{
+     public static void main(String[] args){
+         System.out.println("MainPrivate2 class MainPrivate23");
+     }
 
  }
 }
