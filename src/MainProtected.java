@@ -16,3 +16,10 @@ class MainProtected2 {
 class MainProtected3 {
 
 }
+class MainProtected4 {
+
+}
+class MainProtected5 {
+
+}
+
