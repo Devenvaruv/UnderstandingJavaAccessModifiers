@@ -8,7 +8,7 @@ public class MainPublic {
     }
 
 }
-// Access Modifiers public is not allowed here as only one public access modifier at top level is allowed
+// Access Modifiers public is not allowed here as only one public access modifier at top level is allowed because of JLS Specification. The Compiler expects a single public class with the same name as the source file name
 class MainPublic2 {
 
 }
@@ -17,7 +17,7 @@ class MainPublic3 {
 
 }
 
-class MainPublic4 {
+ class MainPublic4 {
    public class InsideMainPublic41{
 
    }

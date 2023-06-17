@@ -1,4 +1,4 @@
-public class MainDefault {
+class MainDefault {
 
      int defaultInt = 0;
 
@@ -8,18 +8,39 @@ public class MainDefault {
 }
 
 class MainDefault2 {
-   public static void main(String[] args){
+    static void main(String[] args){
         System.out.println("MainDefault class MainDefault2");
    }
 }
 
 class MainDefault3 {
-
+    public void main(String[] args){
+        System.out.println("MainDefault class MainDefault3");
+    }
 }
 
 class MainDefault4 {
-
+    public static void min(String[] args){
+        System.out.println("MainDefault class MainDefault4");
+    }
 }
 class MainDefault5 {
-
+    public static void main(String args){
+        System.out.println("MainDefault class MainDefault5");
+    }
+}
+class MainDefault6 {
+    public static void main(String[] f){
+        System.out.println("MainDefault class MainDefault6");
+    }
+}
+class MainDefault7 {
+    public static void main(String[] args){
+        System.out.println("MainDefault class MainDefault7");
+    }
+}
+class MainDefault8 {
+    public static void main(String[] args){
+        System.out.println("MainDefault class MainDefault8");
+    }
 }
