@@ -12,5 +12,18 @@ class MainPrivate2 {
 }
 
 class MainPrivate3 {
+    public static void main(String[] args){
+//        MainPrivate mainprivate = new MainPrivate();
+        System.out.println("MainPrivate class MainPrivate3");
+//        mainprivate.privateMethod();
+    }
 
 }
+
+class MainPrivate4 {
+
+}
+class MainPrivate5 {
+
+}
+

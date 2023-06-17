@@ -9,10 +9,10 @@ public class MainPublic {
 
 }
 
-public class MainPublic2 {
+class MainPublic2 {
 
 }
 
-public class MainPublic3 {
+class MainPublic3 {
 
 }
