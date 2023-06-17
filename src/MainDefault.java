@@ -5,32 +5,32 @@ class MainDefault {
      }
 }
 class MainDefault2 {
-    public static void main(String[] args){
+    static void main(String[] args){
         System.out.println("MainDefault class MainDefault2");
    }
 }
 class MainDefault3 {
-    public static void main(String[] args){
+    public void main(String[] args){
         System.out.println("MainDefault class MainDefault3");
     }
 }
 class MainDefault4 {
-    public static void main(String[] args){
+    public static void min(String[] args){
         System.out.println("MainDefault class MainDefault4");
     }
 }
 class MainDefault5 {
-    public static void main(String[] args){
+    public static void main(String args){
         System.out.println("MainDefault class MainDefault5");
     }
 }
 class MainDefault6 {
-    public static void main(String[] whyargs){
+    public static void main(Integer[] args){
         System.out.println("MainDefault class MainDefault6");
     }
 }
 class MainDefault7 {
-    public static void main(String[] args){
+    public static void main(String[] anyThingCanGoHere){
         System.out.println("MainDefault class MainDefault7");
     }
 }
