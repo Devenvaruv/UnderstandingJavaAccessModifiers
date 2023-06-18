@@ -20,50 +20,50 @@ class MainProtected {// this class will have different variable and methods
 
 }
 
-class Mainprotected2 {// This class will have nested classes
-    protected int mainprotected2Int = 1;
-    protected static int staticMainprotected2Int = 2;
+class mainProtected2 {// This class will have nested classes
+    protected int mainProtected2Int = 1;
+    protected static int staticMainProtected2Int = 2;
 
-    protected static class Mainprotected21 {
-        protected void mainprotected21Method() {
-            System.out.println("Mainprotected2 method Mainprotected21Method");
+    protected static class mainProtected21 {
+        protected void mainProtected21Method() {
+            System.out.println("mainProtected2 method mainProtected21Method");
         }
 
-        protected static void staticMainprotected21Method() {
-            System.out.println("Mainprotected2 method StaticMainprotected21Method");
+        protected static void staticMainProtected21Method() {
+            System.out.println("mainProtected2 method StaticMainProtected21Method");
         }
     }
 
-    protected class Mainprotected22 {
-        protected int mainprotected22Int = 1;
-        protected static int staticMainprotected22Int = 2;
+    protected class mainProtected22 {
+        protected int mainProtected22Int = 1;
+        protected static int staticMainProtected22Int = 2;
 
-        protected class Mainprotected221 {
-            protected static void staticMainprotected221Method(int i) {
-                System.out.println("Mainprotected22 method Mainprotected221Method" + i + staticMainprotected22Int + mainprotected22Int + staticMainprotected2Int + mainprotected2Int);
+        protected class mainProtected221 {
+            protected static void staticMainProtected221Method(int i) {
+                System.out.println("mainProtected22 method mainProtected221Method" + i + staticMainProtected22Int + mainProtected22Int + staticMainProtected2Int + mainProtected2Int);
             }
 
-            protected void mainprotected221Method(int i) {
-                System.out.println("Mainprotected22 method Mainprotected221Method" + i + staticMainprotected22Int + mainprotected22Int + staticMainprotected2Int + mainprotected2Int);
+            protected void mainProtected221Method(int i) {
+                System.out.println("mainProtected22 method mainProtected221Method" + i + staticMainProtected22Int + mainProtected22Int + staticMainProtected2Int + mainProtected2Int);
             }
 
         }
 
     }
 
-    protected class Mainprotected23 {
+    protected class mainProtected23 {
 
-        protected class Mainprotected231 {
-            protected class Mainprotected2311 {
-                protected void Mainprotected2311Method() {
-                    System.out.println("Mainprotected method Mainprotected231Method");
+        protected class mainProtected231 {
+            protected class mainProtected2311 {
+                protected void mainProtected2311Method() {
+                    System.out.println("mainProtected method mainProtected2311Method");
                 }
             }
         }
 
-        protected static class Mainprotected232 {
-            protected void Mainprotected232Method() {
-                System.out.println("Mainprotected method Mainprotected232Method");
+        protected static class mainProtected232 {
+            protected void mainProtected232Method() {
+                System.out.println("mainProtected method mainProtected232Method");
             }
         }
 

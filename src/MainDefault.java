@@ -48,7 +48,7 @@ class Main2 {// This class will have nested classes
          class Main231 {
              class Main2311 {
                  void Main2311Method() {
-                    System.out.println("Main method Main231Method");
+                    System.out.println("Main method Main2311Method");
                 }
             }
         }
@@ -67,18 +67,21 @@ class MainDefault3 {// This class will call different methods from Main and Main
 
 }
 
-class MainDefault4 {
+class MainDefault4 {// This will call method from  a different file
 }
 
-class MainDefault5 {
+class MainDefault5 {// Inheritance
+
 }
 
-class MainDefault6 {
+class MainDefault6 {// Polymorphism
+
 }
 
-class MainDefault7 {
+class MainDefault7 {// Abstraction
+
 }
 
-class MainDefault8 {
+class MainDefault8 {// Encapsulation
 }
 

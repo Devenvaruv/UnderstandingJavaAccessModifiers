@@ -3,14 +3,14 @@
 public class MainPublic {// this class will have different variable and methods
 
     public int publicInt = 0;
-    public static int publicStaticInt = 1;
+    public static int staticPublicInt = 1;
 
     public void publicMethod() {
         System.out.println("MainPublic method publicMethod");
     }
 
-    public static void publicStaticMethod() {
-        System.out.println("MainPublic method publicStaticMethod");
+    public static void staticPublicMethod() {
+        System.out.println("MainPublic method staticPublicMethod");
     }
 
 }
@@ -36,12 +36,16 @@ class MainPublic2 {// This class will have nested classes
         public static int staticMainPublic22Int = 2;
 
         public class MainPublic221 {
+            public int mainPublic221Int = 1;
+            public static int staticMainPublic221Int = 2;
             public static void staticMainPublic221Method(int i) {
-                System.out.println("MainPublic22 method MainPublic221Method" + i + staticMainPublic22Int + mainPublic22Int + staticMainPublic2Int + mainPublic2Int);
+                System.out.println("MainPublic22 method MainPublic221Method" + i + staticMainPublic22Int +
+                        + staticMainPublic2Int + mainPublic2Int + mainPublic221Int + staticMainPublic221Int);
             }
 
             public void mainPublic221Method(int i) {
-                System.out.println("MainPublic22 method MainPublic221Method" + i + staticMainPublic22Int + mainPublic22Int + staticMainPublic2Int + mainPublic2Int);
+                System.out.println("MainPublic22 method MainPublic221Method" + i + staticMainPublic22Int + mainPublic22Int +
+                        staticMainPublic2Int + mainPublic2Int + mainPublic221Int + staticMainPublic221Int);
             }
 
         }
@@ -53,7 +57,7 @@ class MainPublic2 {// This class will have nested classes
         public class MainPublic231 {
             public class MainPublic2311 {
                 public void MainPublic2311Method() {
-                    System.out.println("MainPublic method MainPublic231Method");
+                    System.out.println("MainPublic method MainPublic2311Method");
                 }
             }
         }
@@ -68,20 +72,68 @@ class MainPublic2 {// This class will have nested classes
 }
 
 class MainPublic3 {// This class will call different methods from MainPublic and MainPublic2 classes
-    static MainPublic staticmainpublic = new MainPublic();
-    MainPublic mainpublic1 = new MainPublic();
+      MainPublic mainPublicOutside =  new MainPublic();
+      static MainPublic staticMainPublicOutside =  new MainPublic();
 
-    public static void main(String[] args) {
-//        mainpublic mp = new mainpublic();
-//        mainpublic.publicMethod();
-        MainPublic mainpublic = new MainPublic();
-        System.out.println("MainPublic3");
-        mainpublic.publicMethod();
-        MainPublic.publicStaticMethod();
-        System.out.println("MainPublic.publicStaticInt = " + MainPublic.publicStaticInt);
-        staticmainpublic.publicMethod();
-        System.out.println("MainPublic.publicInt = " + staticmainpublic.publicInt);
-    }
+      public void mainPublic3Method(){
+          MainPublic mainPublicInside =  new MainPublic();
+          static MainPublic staticMainPublicInside =  new MainPublic();
+
+          publicMethod();
+          staticPublicMethod();
+          System.out.println(publicInt + staticPublicInt);
+
+          MainPublic.publicMethod();
+          MainPublic.staticPublicMethod();
+          System.out.println(MainPublic.publicInt + MainPublic.staticPublicInt);
+
+          mainPublicOutside.publicMethod();
+          mainPublicOutside.staticPublicMethod();
+          System.out.println(mainPublicOutside.publicInt + mainPublicOutside.staticPublicInt);
+
+          staticMainPublicOutside.publicMethod();
+          staticMainPublicOutside.staticPublicMethod();
+          System.out.println( staticMainPublicOutside.publicInt +  staticMainPublicOutside.staticPublicInt);
+
+          mainPublicInside.publicMethod();
+          mainPublicInside.staticPublicMethod();
+          System.out.println(mainPublicInside.publicInt + mainPublicInside.staticPublicInt);
+
+          staticMainPublicInside.publicMethod();
+          staticMainPublicInside.staticPublicMethod();
+          System.out.println( staticMainPublicInside.publicInt +  staticMainPublicInside.staticPublicInt);
+
+      }
+
+      public static void mainPublic3Method() {
+          MainPublic mainPublicInside =  new MainPublic();
+          static MainPublic staticMainPublicInside =  new MainPublic();
+
+          publicMethod();
+          staticPublicMethod();
+          System.out.println(publicInt + staticPublicInt);
+
+          MainPublic.publicMethod();
+          MainPublic.staticPublicMethod();
+          System.out.println(MainPublic.publicInt + MainPublic.staticPublicInt);
+
+          mainPublicOutside.publicMethod();
+          mainPublicOutside.staticPublicMethod();
+          System.out.println(mainPublicOutside.publicInt + mainPublicOutside.staticPublicInt);
+
+          staticMainPublicOutside.publicMethod();
+          staticMainPublicOutside.staticPublicMethod();
+          System.out.println( staticMainPublicOutside.publicInt +  staticMainPublicOutside.staticPublicInt);
+
+          mainPublicInside.publicMethod();
+          mainPublicInside.staticPublicMethod();
+          System.out.println(mainPublicInside.publicInt + mainPublicInside.staticPublicInt);
+
+          staticMainPublicInside.publicMethod();
+          staticMainPublicInside.staticPublicMethod();
+          System.out.println( staticMainPublicInside.publicInt +  staticMainPublicInside.staticPublicInt);
+      }
+
 
 }
 

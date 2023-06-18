@@ -17,50 +17,50 @@ class MainPrivate {// this class will have different variable and methods
     }
 }
 
-class Mainprivate2 {// This class will have nested classes
-    private int mainprivate2Int = 1;
-    private static int staticMainprivate2Int = 2;
+class mainPrivate2 {// This class will have nested classes
+    private int mainPrivate2Int = 1;
+    private static int staticMainPrivate2Int = 2;
 
-    private static class Mainprivate21 {
-        private void mainprivate21Method() {
-            System.out.println("Mainprivate2 method Mainprivate21Method");
+    private static class MainPrivate21 {
+        private void mainPrivate21Method() {
+            System.out.println("mainPrivate2 method MainPrivate21Method");
         }
 
-        private static void staticMainprivate21Method() {
-            System.out.println("Mainprivate2 method StaticMainprivate21Method");
+        private static void staticMainPrivate21Method() {
+            System.out.println("MainPrivate2 Method StaticMainPrivate21Method");
         }
     }
 
-    private class Mainprivate22 {
-        private int mainprivate22Int = 1;
-        private static int staticMainprivate22Int = 2;
+    private class mainPrivate22 {
+        private int mainPrivate22Int = 1;
+        private static int staticMainPrivate22Int = 2;
 
-        private class Mainprivate221 {
-            private static void staticMainprivate221Method(int i) {
-                System.out.println("Mainprivate22 method Mainprivate221Method" + i + staticMainprivate22Int + mainprivate22Int + staticMainprivate2Int + mainprivate2Int);
+        private class mainPrivate221 {
+            private static void staticMainPrivate221Method(int i) {
+                System.out.println("mainPrivate22 method mainPrivate221Method" + i + staticMainPrivate22Int + mainPrivate22Int + staticMainPrivate2Int + mainPrivate2Int);
             }
 
-            private void mainprivate221Method(int i) {
-                System.out.println("Mainprivate22 method Mainprivate221Method" + i + staticMainprivate22Int + mainprivate22Int + staticMainprivate2Int + mainprivate2Int);
+            private void mainPrivate221Method(int i) {
+                System.out.println("mainPrivate22 method mainPrivate221Method" + i + staticMainPrivate22Int + mainPrivate22Int + staticMainPrivate2Int + mainPrivate2Int);
             }
 
         }
 
     }
 
-    private class Mainprivate23 {
+    private class mainPrivate23 {
 
-        private class Mainprivate231 {
-            private class Mainprivate2311 {
-                private void Mainprivate2311Method() {
-                    System.out.println("Mainprivate method Mainprivate231Method");
+        private class mainPrivate231 {
+            private class mainPrivate2311 {
+                private void mainPrivate2311Method() {
+                    System.out.println("mainPrivate method mainPrivate2311Method");
                 }
             }
         }
 
-        private static class Mainprivate232 {
+        private static class mainPrivate232 {
             private void mainPrivate232Method() {
-                System.out.println("MainPrivate method MainPrivate232Method");
+                System.out.println("mainPrivate method mainPrivate232Method");
             }
         }
 
